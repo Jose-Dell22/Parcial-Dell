@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup de Página</title>
+    <link rel="stylesheet" href="../Styles/inicio.css">
+    <script src="../js/inicio.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Nombre de la Empresa</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./Inicio.html">Inicio</a></li>
+                <li><a href="./programas.html">Programa</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./Log_in.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image-gallery">
+        <aside class="gallery-controls">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </aside>
+        <img id="gallery-image" src="../images/img_1.jpg" alt="Oferta 1">
+    </div>
+
+    <div class="progress-dots">
+        <span class="dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+    </div>
+
+    <div>
+        <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit conubia potenti, aliquet felis eu netus augue sociis curae eleifend a, urna rhoncus primis cum hendrerit taciti hac nisl. Netus bibendum quis sodales fusce natoque quam scelerisque varius sapien aliquam curae diam feugiat, hendrerit risus taciti orci magna ultrices dictum duis nascetur morbi id dis. Aenean vehicula rutrum enim mattis sociosqu orci euismod ac imperdiet, tortor nulla dictumst nunc morbi proin eros.
+            <br><br>
+            Litora urna porttitor mi et nibh scelerisque venenatis senectus netus cursus, pretium dictumst curae ut maecenas tellus in feugiat. Natoque nisi rhoncus est faucibus, enim aliquet pharetra massa, mi donec lectus. Facilisis libero hac montes placerat quam conubia sociosqu enim tristique, phasellus lectus vehicula fusce auctor bibendum ligula malesuada laoreet, tempor aptent vivamus taciti vitae per posuere nec.
+        </p>
+    </div>
+
+    <footer>
+        <button onclick="cambiarTexto()">Cambiar contenido</button>
+        <button onclick="cambiarColor()">Cambiar Color de la Página</button>
+    </footer>
+    
+</body>
+</html>

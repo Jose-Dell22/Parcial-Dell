@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Styles/Log_in.css">
+    <script src="../js/Log_in.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Ingrese los datos para registrarse</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./Inicio.html">Inicio</a></li>
+                <li><a href="./programas.html">Programa</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./Log_in.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="form-content">
+            <h2>Formulario de Registro</h2>
+            <form id="registration-form">
+                <label for="first-name">Nombre:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <div id="errorFirstName" class="mensaje-error"></div>
+
+                <label for="last-name">Apellidos:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <div id="errorLastName" class="mensaje-error"></div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="errorEmail" class="mensaje-error"></div>
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <div id="errorPhone" class="mensaje-error"></div>
+
+                <label for="dob">Fecha de Nacimiento:</label>
+                <input type="date" id="dob" name="dob" required>
+                <div id="errorDob" class="mensaje-error"></div>
+
+                <label for="estrato">Estrato:</label>
+                <input type="number" id="estrato" name="estrato" min="1" max="6" required>
+                <div id="errorEstrato" class="mensaje-error"></div>
+
+                <label for="blood-group">Grupo Sanguíneo:</label>
+                <select id="blood-group" name="blood-group" required>
+                    <option value="">Seleccione</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <div id="errorBloodGroup" class="mensaje-error"></div>
+
+                <fieldset class="Gender">
+                    <label>
+                        <input type="radio" id="male" name="gender" value="masculino" required>
+                        Masculino
+                    </label>
+                    <label>
+                        <input type="radio" id="female" name="gender" value="femenino" required>
+                        Femenino
+                    </label>
+                </fieldset>
+                <div id="errorGender" class="mensaje-error"></div>
+
+                <label for="favorites">Actividades Favoritas:</label>
+                <select id="favorites" name="favorites" required multiple>
+                    <option value="deportes">Deportes</option>
+                    <option value="musica">Música</option>
+                    <option value="lectura">Lectura</option>
+                    <option value="cine">Cine</option>
+                    <option value="viajes">Viajes</option>
+                </select>
+                <div id="errorFavorites" class="mensaje-error"></div>
+
+                <div class="botones">
+                    <button type="submit">Registrar</button>
+                    <button type="button" onclick="window.location.href='./Log_in_Adicional.html';">Logearse</button>
+                    <button type="button" onclick="window.location.href='./Inicio.html';">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
